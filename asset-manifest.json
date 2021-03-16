@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.778e9496.chunk.css",
-    "main.js": "/static/js/main.35e93f60.chunk.js",
-    "main.js.map": "/static/js/main.35e93f60.chunk.js.map",
+    "main.js": "/static/js/main.54fc1d1c.chunk.js",
+    "main.js.map": "/static/js/main.54fc1d1c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3cdaf18b.js",
     "runtime-main.js.map": "/static/js/runtime-main.3cdaf18b.js.map",
     "static/js/2.4cba79bd.chunk.js": "/static/js/2.4cba79bd.chunk.js",
@@ -15,7 +15,7 @@
     "static/media/email-logo.0db9938f.svg": "/static/media/email-logo.0db9938f.svg",
     "static/media/github-logo.04be58c1.svg": "/static/media/github-logo.04be58c1.svg",
     "static/media/linkedin-logo.48f4acce.svg": "/static/media/linkedin-logo.48f4acce.svg",
-    "static/media/rick.9e8a7135.png": "/static/media/rick.9e8a7135.png",
+    "static/media/rick.14636daa.png": "/static/media/rick.14636daa.png",
     "static/media/rickvarela-end-logo.7b2ea726.svg": "/static/media/rickvarela-end-logo.7b2ea726.svg",
     "static/media/rickvarela-logo.6ab0dd2c.svg": "/static/media/rickvarela-logo.6ab0dd2c.svg",
     "static/media/todo-screenshot.169f8d9d.jpg": "/static/media/todo-screenshot.169f8d9d.jpg",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.3cdaf18b.js",
     "static/js/2.4cba79bd.chunk.js",
     "static/css/main.778e9496.chunk.css",
-    "static/js/main.35e93f60.chunk.js"
+    "static/js/main.54fc1d1c.chunk.js"
   ]
 }
