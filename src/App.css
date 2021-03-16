@@ -1,0 +1,393 @@
+@import-sanitize;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Unica+One&display=swap');
+
+/* || General Styles */
+
+ul {
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 2.2rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited, a:link {
+  color: inherit;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.9rem;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin: 15px 0 5px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.app {
+  font-family: 'Unica One';
+  background: linear-gradient(to right, #457B9D, #A8DADC);
+  color: white;
+}
+
+/* || Header */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #457B9D, #A8DADC);
+  z-index: 3;
+  border-bottom: 2px solid #ade8f4;
+  box-shadow: 0 0 20px rgb(0 0 0 / 16%);
+}
+
+.site-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.site-logo {
+  height: 20px;
+  fill: white
+}
+
+/* || Site Naviagation */
+
+.site-nav-mobile {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 3.5rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.site-nav-mobile-x {
+  margin-bottom: 40px;
+}
+
+.site-nav-desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  font-size: 1.75rem;
+}
+
+.site-nav-link {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  display: block;
+  width: fit-content;
+}
+
+.site-nav-link a {
+  color: black;
+}
+
+.site-nav-hidden {
+  display: none;
+}
+
+.site-nav-desktop > li {
+  margin-left: 30px;
+  padding: 5px;
+}
+
+/* || Home Section */
+
+.site-home {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.site-home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.home-background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  stroke-width: 4px;
+  stroke: #ade8f4;
+}
+
+.home-img {
+  height: 150px;
+  border-radius: 100%;
+  border: 8px solid white;
+  margin-bottom: 20px;
+}
+
+/* || About Section */
+
+.site-about, .site-contact {
+  background: white;
+  color: black;
+  box-shadow: 0 0 20px rgb(0 0 0 / 16%);
+}
+
+.site-about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.about-headline {
+  margin-bottom: 25px;
+}
+
+/* || Projects Section */ 
+
+.site-projects {
+  padding: 40px 0;
+}
+
+.site-projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.projects-list {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  gap: 20px;
+  align-content: flex-start;
+  padding: 0 20px;
+}
+
+.project {
+  border: 3px solid #ade8f4;
+  padding: 20px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 16%);
+  border-radius: 5px;
+}
+
+.project > img {
+  width: 100%;
+  border: 3px solid #ade8f4;
+  border-radius: 5px;
+}
+
+/* || Contact Section */
+
+.contact-logo {
+  height: 50px;
+}
+
+.site-end-logo {
+  height: 40px;
+}
+
+.site-contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.site-contact-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* || Footer */
+
+.site-footer {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* || Project Grid Orientation */
+
+@media (min-width: 500px) {
+
+  .projects-list {
+    /*grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));*/
+  }
+
+  .home-img {
+    margin-left: 20px;
+  }
+}
+
+/* || Medium Size Screens */
+
+@media (min-width: 700px) {
+
+  /* || General Styles */
+
+  h1 {
+    font-size: 5.5rem;
+    line-height: 4rem;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  /* || Site Header */
+
+  .site-logo {
+    height: 35px;
+  }
+
+  /* || Home Section */
+
+  .home-text > p {
+    text-align: center;
+  }
+
+  .home-img {
+    height: 180px;
+  }
+
+  /* || Contact Section */
+
+  .site-contact-icons {
+    width: 300px;
+  }
+
+}
+
+/* || Large Size Screens */
+
+@media (min-width: 1200px) {
+
+  /* || General Styles */
+
+  h1 {
+    font-size: 7rem;
+    line-height: 6rem;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+
+  p {
+    font-size: 1.75rem;
+  }
+
+  /* || Site Header */
+
+  .site-header-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* || Home Section */
+
+  .home-img {
+    height: 210px;
+    margin-left: 40px;
+  }
+
+  /* || About Section */
+
+  .site-about-wrapper {
+    max-width: 700px;
+  }
+
+  /* || Projects Section */
+
+  .projects-list {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* || Contact Section */
+
+  .contact-logo {
+    height: 60px;
+  }
+
+  /* || Site Footer */
+
+  .site-end-logo {
+    height: 45px;
+  }
+
+}
+
+/* || Site Orientation Responsiveness */
+
+@media screen and (orientation: portrait) {
+  .site-home-wrapper {
+    flex-direction: column;
+  }
+  .home-img {
+    margin-left: 0;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .site-home-wrapper {
+    flex-direction: row-reverse;
+  }
+  .home-img {
+    margin-bottom: 0;
+  }
+}
