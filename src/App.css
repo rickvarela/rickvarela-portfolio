@@ -1,5 +1,5 @@
 @import-sanitize;
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Unica+One&display=block');
 
 /* || General Styles */
 
@@ -158,6 +158,7 @@ p {
 
 .home-img {
   height: 150px;
+  width: 150px;
   border-radius: 100%;
   border: 8px solid white;
   margin-bottom: 20px;
@@ -300,6 +301,8 @@ p {
 
   .home-img {
     height: 180px;
+    width: 180px;
+    min-width: 180;
   }
 
   /* || Contact Section */
@@ -342,6 +345,7 @@ p {
 
   .home-img {
     height: 210px;
+    width: 210px;
     margin-left: 40px;
   }
 
