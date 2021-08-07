@@ -110,6 +110,10 @@ p {
   font-size: 1.75rem;
 }
 
+.site-nav-desktop a:hover {
+  border-bottom: 2px solid #ade8f4;
+}
+
 .site-nav-link {
   margin: 0;
   margin-bottom: 20px;
@@ -258,6 +262,10 @@ p {
 
 .contact-logo {
   height: 50px;
+}
+
+.contact-logo:hover {
+  fill: #ade8f4;
 }
 
 .site-end-logo {

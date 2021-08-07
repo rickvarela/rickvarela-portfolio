@@ -1,6 +1,6 @@
-import LinkedinLogo from '../assets/svg/linkedin-logo.svg';
-import GithubLogo from '../assets/svg/github-logo.svg';
-import EmailLogo from '../assets/svg/email-logo.svg';
+import { ReactComponent as LinkedinLogo } from '../assets/svg/linkedin-logo.svg';
+import { ReactComponent as GithubLogo } from '../assets/svg/github-logo.svg';
+import { ReactComponent as EmailLogo } from '../assets/svg/email-logo.svg';
 
 export const Contact = () => {
   return (
@@ -9,17 +9,13 @@ export const Contact = () => {
         <h2>CONTACT</h2>
         <div className='site-contact-icons'>
           <a href='mailto:rickvarela17@gmail.com'>
-            <img className='contact-logo' src={EmailLogo} alt='Email icon' />
+            <EmailLogo className='contact-logo' />
           </a>
           <a href='https://github.com/rickvarela'>
-            <img className='contact-logo' src={GithubLogo} alt='Github icon' />
+            <GithubLogo className='contact-logo' />
           </a>
           <a href='https://www.linkedin.com/in/rick-varela/'>
-            <img
-              className='contact-logo'
-              src={LinkedinLogo}
-              alt='Linkedin icon'
-            />
+            <LinkedinLogo className='contact-logo' />
           </a>
         </div>
       </div>
