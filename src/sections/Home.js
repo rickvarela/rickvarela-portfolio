@@ -8,7 +8,9 @@ export const Home = ({ screenDims }) => {
         <img src={rickAvatar} className='home-img' alt='Rick' />
         <div className='home-text'>
           <h1>RICK VARELA</h1>
-          <p>I'm a self-taught programmer</p>
+          <p>
+            I'm a mechanical engineer and <br /> self-taught web developer
+          </p>
         </div>
         <LineBackground screenDims={screenDims} />
       </div>
