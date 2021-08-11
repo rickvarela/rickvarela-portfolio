@@ -30,7 +30,7 @@ export const Projects = () => {
           githubPath='https://github.com/rickvarela/notelyst'
         />
         <Project
-          title='PORFOLIO SITE'
+          title='PORTFOLIO SITE'
           desc='My porfolio site you are currently visiting'
           imgSrc={PorfolioScreenshot}
           githubPath='https://github.com/rickvarela/rickvarela.github.io'
